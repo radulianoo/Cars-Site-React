@@ -1,7 +1,7 @@
 function Footer() {
-    const footerData = <p>Copyright &copy;Octav Radulian 2024</p>
-
-    return footerData;
+    return <footer className="cars-footer">
+        <p>Copyright Octav Radulian&copy; 2024</p>
+    </footer>
 }
 
 export default Footer;

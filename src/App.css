@@ -1,43 +1,74 @@
 :root {
   --nav-color: #37B5B6;
   --most-used: #0A1D56;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --indigo: #492E87;
+  --light-yellow: #F2F597;
+  --white: #fff;
 }
 
 .App {
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
-.App .app-header {
-  display: flex;
+.App .cars-header {
+  height: 160px;
   width: 100%;
-}
-
-.App .app-header .nav-item {
+  padding: 10px 30px;
   display: flex;
-  width: 100%;
-  padding: 10px 20px;
+  gap: 50px;
   align-items: center;
   background-color: var(--nav-color);
 }
 
-.App .app-header .nav-item .business-name {
-  padding-left: 20px;
-  font-size: 48px;
-  font-weight: 600;
-}
-
-.App .car-logo {
-  height: 200px;
-}
-
-.App .footer-info {
+.App .app-row {
   display: flex;
+}
+
+.App .cars-header img {
+  height: 100%;
+}
+
+.App .cars-header h1 {
+  color: var(--white);
+}
+
+.App .cars-sidebar {
+  width: 300px;
+  min-height: 600px;
+  padding: 30px;
+  background-color: var(--light-yellow);
+}
+
+.App .cars-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.App .cars-sidebar .cars-list-item {
+  padding: 10px 20px;
+  background-color: var(--indigo);
+  margin-bottom: 20px;
+  color: var(--white); 
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.App .cars-main-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  
+}
+
+.App .cars-footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  color: var(--white);
+  background-color: var(--nav-color);
 }
