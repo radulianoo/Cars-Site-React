@@ -59,9 +59,34 @@
 
 .App .cars-main-content {
   flex: 1;
-  padding: 30px;
+  padding: 50px;
   display: flex;
-  
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.App .cars-main-content .cars-card {
+  padding: 30px;
+  border: 1px solid var(--nav-color);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 40px;
+  align-items: center;
+  background-color: var(--light-yellow);
+}
+
+.App .cars-main-content .cars-card img {
+  width: 80%;
+}
+
+.App .cars-main-content .cars-card h2 {
+  font-size: 48px;
+}
+
+.App .cars-main-content .cars-card p {
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .App .cars-footer {
